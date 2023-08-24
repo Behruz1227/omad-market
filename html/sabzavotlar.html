@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/sabzavotlar.css" />
+    <link rel="stylesheet" href="animate.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Sabzavotlar</title>
+  </head>
+  <body>
+    <div class="main" id="sabzavot" style="margin-right: 20%;">
+      <nav
+        class="nav fixed-top navbar bg-body-tertiary"
+        style="background-color: #F8F9FA; height: 53px; padding-left: 20%;"
+      >
+        <div class="container-fluid w-100">
+          <a class="navbar-brand" style="background: #FF5050;
+          background: radial-gradient(ellipse farthest-side at left center, #FF5050 48%, #A41316 0%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; font-weight: 1000; font-size: 30px; padding: 0;">Omad.uz</a>
+           
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+            
+          </form>
+          <a style="font-size: 22px; margin: 0;" class="nav-link text-danger" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>Kirish<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-octagon ms-2" viewBox="0 0 16 16">
+            <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
+          <a class="nav-link text-danger" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-plus me-2" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>Ro'yxatdan o'tish<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-octagon ms-2" viewBox="0 0 16 16">
+            <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
+          <a class="nav-link text-danger" aria-current="page" href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class=" bi bi-eye" viewBox="0 0 16 16">
+            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+          </svg></span><span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="ms-2 bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+          </svg></span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4 ms-2 mb-1" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+          </svg></a>
+        </div>
+         
+      </nav>
+      <nav
+        class="fixed-top nav nav-pills flex-column flex-sm-row"
+        style="
+          background-color: rgb(51, 51, 51);
+          height: 43px;
+          width: 100%;
+          top: 53px;
+        "
+      >
+      <ul class="nav nav-tabs">
+        <li class="flex-sm-fill text-sm-center nav-item">
+            <a class="nav-link text-light" aria-current="page" href="../index.html">HOME</a>
+          </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light active" aria-current="page" href="./mevalar.html">Oziq-ovqatlar</a>
+        </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light" href="./idishlar.html">Idishlar</a>
+        </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light" href="./bolla.html">O'yinchoqlar</a>
+        </li>
+      </ul>
+      </nav>
+      <div class="body row">
+        <div class="sitebar">
+          <div class="navigation col-2 zindex-fixed">
+            <ul>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./mevalar.html">
+                  <span class="tittle animated bounceInDown">Mevalar</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./ichimliklar.html">
+                    <!-- <span class="icon"><i class="fat fa-bottle-water"></i></span> -->
+                    <span class="tittle">Ichimliklar</span>
+                </a>
+            </li>
+              <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="./sabzavotlar.html">
+                  <span class="tittle">Sabzavotlar</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./don_maxsulotlari.html">
+                  <span class="tittle">Don mahsulotlari</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./qandolat.html">
+                  <!-- <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span> -->
+                  <span class="tittle">Qandolat mahsulotlari</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./go'sh_maxsulotlari.html">
+                  <span class="tittle">Go'st mahsulotlari</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./dudlangan_maxsulotlar.html">
+                  <span class="tittle">Dudlangan mahsulotlari</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./quruq_choylar.html">
+                  <span class="tittle">Choy mahsulotlari</span>
+                </a>
+            </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./shirinlik.html">
+                  <span class="tittle">Shirinliklar</span>
+                </a>
+              </li>
+              <li class="list">
+                <b></b>
+                <b></b>
+                <a href="./sut_maxsulotlar.html">
+                  <span class="tittle">Sut mahsulotlari</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <article class="mevalar col-8">
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://dostavo4ka.uz/upload-file/2021/05/05/3157/1ec2d719-b175-43fc-9c0f-edcf63e55e5f.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Qizil sabzi</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">3990</span> so'm.
+              </p>
+              <img class="rating" src="../img/rating.jpg">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://darakchi.uz/storage/72/6a/0c/33206/conversions/zwnodXO4qlEd36YliT_ILgWKbOV5roVv-xl.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Piyoz</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">3990</span> so'm.
+              </p>
+              <img class="rating" src="../img/rating.jpg">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://dostavo4ka.uz/upload-file/2021/05/05/276/9e3b7089-3194-4513-a443-b85019fb68cf.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Bulg'or qalampiri</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">5990</span> so'm.
+              </p>
+              <img class="rating" src="../img/rating.jpg">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://dostavo4ka.uz/upload-file/2021/05/05/1968/750x750-1a2cc6a2-5d86-4ea1-ae92-c7bd451613c9.jpg"
+              class="card-img-top sabzavot-img"
+              alt="sabzi"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Sariq sabzi</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4990</span> so'm.
+              </p>
+              <img class="rating" src="../img/rating.jpg">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://avitsenna.uz/wp-content/uploads/2014/01/tikva-golqma.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Qovoq</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">6990</span> so'm.
+              </p>
+              <img class="rating" src="../img/rating.jpg">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://nesipetsin.com:7070/images/product/2022/01/19/07/1d2c53d6-20ed-420f-910a-bf3699b5af39.jpg"
+              class="card-img-top sabzavot-img"
+              alt="sabzi"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Pomidor</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4990</span> so'm.
+              </p>
+                <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://img3.zakaz.ua/src.1607525274.ad72436478c_2020-12-09_YuliaT/src.1607525274.SNCPSG10.obj.0.1.jpg.oe.jpg.pf.jpg.1350nowm.jpg.1350x.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Kartoshka</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">5990</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://dostavo4ka.uz/upload-file/2021/05/05/4182/750x750-da29607a-78d2-4207-9474-1b981a621266.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Qalampir</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">15990</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://yukber.uz/image/cache/catalog/cabbage-700x700.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Karam</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">3000</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+
+
+
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://uzbekistan.amarok-official.eu/images/maqola/1804/erkak%20salohiyatini%20oshirish%20uchun%20sholg'om.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Sholg'om</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4990</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://media.istockphoto.com/id/121137414/ru/%D1%84%D0%BE%D1%82%D0%BE/%D0%BD%D0%B5%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9-%D1%81%D0%B0%D0%B4-%D0%B4%D0%B0%D0%B9%D0%BA%D0%BE%D0%BD.jpg?s=612x612&w=0&k=20&c=iFNn6krKJhNbXS-PSQrIOnaHKtzDQhvihsGv7ehqQco="
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Rediska</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">7990</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://daryo.uz/cache/2017/09/1604-538x527.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Baqlajon</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">1690</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Bodring</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4590</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Lavlagi</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4190</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://i.mycdn.me/i?r=AyENid1PUfRjbfTS8I1wumQ-bPp2LscMOAimQqLTATI8Tg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Sarimsoq piyoz</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">17890</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7s_-9BaV4PnQE8dpD3-OfhNq8LBap_yPs0A&usqp=CAUttps://yukber.uz/image/cache/catalog/cabbage-700x700.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Gulkaram</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">6590</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://dostavo4ka.uz/upload-file/2021/05/05/5919/750x750-932eb989-adad-4623-b913-c58fdb892aa8.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Tarvuz</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">2290</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+
+
+
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://geografiya.uz/uploads/posts/2021-01/1609950606_1609950625.png"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Qovun</h5>
+              <p class="card-text">
+                1 dona - <span class="narx">5690</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://images.prom.ua/2300459317_w640_h640_aromatizator-dlya-svechej.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Handalak</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">2290</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+          <div class="card card-shadow box">
+            <div class="ribbon"><span>top</span></div>
+            <img
+              src="https://cs1.livemaster.ru/storage/62/06/f47cca27572238f25a1b42e172zn--tsvety-i-floristika-redka-margelanskaya-semena-50-sht.jpg"
+              class="card-img-top sabzavot-img"
+            />
+            <div class="card-body align-center">
+              <h5 class="card-title">Turp</h5>
+              <p class="card-text">
+                1 kg - <span class="narx">4380</span> so'm.
+              </p>
+              <img class="rating" src="../img/pngwing.com.png">
+              <a href="#" class="btn btn-outline-primary">+998(97) 222 07 90</a>
+            </div>
+          </div>
+        
+        </article>
+      </div>
+      <footer></footer>
+    </div>
+
+    <script src="../js/sabzavotlar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

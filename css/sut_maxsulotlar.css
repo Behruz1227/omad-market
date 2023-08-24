@@ -1,0 +1,240 @@
+
+/* sidebar start */
+.main{
+    width:99% !important;
+}
+.nav {
+    width: 100%;
+  }
+.home {
+    width: 100%;
+    height: 800px;
+    background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/full_stack_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navigation {
+    position: fixed;
+    top: 30px;
+    bottom: 10px;
+    width: 240px !important;
+    border-radius: 5px;
+    box-sizing: initial;
+    border-left: 5px solid #540405;
+    background: #A41316;
+
+}
+.nav-item .active {
+    background: #A41316 !important;
+  }
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    align-items: center;
+    left: 0;
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 70px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active {
+    background: #ffffff;
+
+}
+
+.navigation ul li b:nth-child(1) {
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.navigation ul li b:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #A41316;
+}
+
+.navigation ul li b:nth-child(2) {
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+
+.navigation ul li b:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #A41316;
+}
+
+.navigation ul li.active b:nth-child(1),
+.navigation ul li.active b:nth-child(2) {
+    display: block;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li.active a {
+    color: #333;
+}
+
+/* .navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 40px;
+    height: 60px;
+    line-height: 70px;
+    text-align: end;
+    z-index: 4;
+    color: #ffffff !important;
+  }
+  
+  .navigation ul li a .icon .ion-icon {
+    font-size: 25px;
+    
+  }
+  .ion-icon {
+    color: #FFF !important;
+  } */
+
+.navigation ul li a .tittle {
+    position: relative;
+    display: block;
+    padding-left: 50px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+
+/* body start */
+
+.mevalar {
+    padding-top: 8%;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card-shadow {
+    text-align: center;
+    width: 16rem;
+    height: 150px;
+    /* border-radius: 50px; */
+    background: linear-gradient(145deg, #adbfd1, #cde3f8);
+    box-shadow:rgba(164, 19, 22, 0.486) 3px 4px 10px;
+}
+.card-shadow:hover {
+    box-shadow:rgba(164, 19, 22, 0.486) 1px 4px 30px;
+    cursor: pointer;
+    transition: 0.6s;
+    transition-property: inherit;
+}
+
+.sabzavot-img {
+    height: 200px;
+}
+
+.narx {
+    color: #540405;
+    font-weight: 700;
+}
+
+/* ribbon */
+.box {
+    width: 200px;
+    height: 350px;
+    position: relative;
+    border: 1px solid #BBB;
+    background-image: url();
+}
+
+.ribbon {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px;
+    height: 75px;
+    text-align: right;
+}
+
+.ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#F70505 0%, #8F0808 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+}
+
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid #8F0808;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
+
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F0808;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F0808;
+}
+
+
+/* end ribbon */

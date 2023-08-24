@@ -1,0 +1,1 @@
+export let url = "https://husniddinbek.pythonanywhere.com/";

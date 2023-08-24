@@ -1,0 +1,64 @@
+.p_main {
+    background-image: url("https://bringo.uz/back_img.webp");
+    width: 100%;
+    height: 260px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_category {
+    margin-top: 10px;
+    
+}
+
+.home_category button {
+     width: 90%;
+    padding: .7rem 0;
+}
+.products_ {
+    margin-top: 3%;
+    height: 200px;
+    
+}
+.product-one {
+    margin-bottom: 2rem;
+}
+.product-one img{
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.product-one > div {
+    width: 100%;
+    height: 77%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 5%;
+}
+
+.product-one > div:hover {
+    transform: scale(1.015);
+}
+.product-text {
+    position: relative;
+    top: 1rem;
+    left: 1.1rem;
+}
+
+.product-text p {
+    margin: 0;
+
+}
+.product-text span {
+    font-weight: 700;
+}
+
+.product-text {
+    font-weight: 700;
+    font-size: 18px;
+}

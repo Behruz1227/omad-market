@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/quruq_choylar.css">
+    <title>Choy mahsulotlari</title>
+</head>
+
+<body>
+    <div class="main" id="don">
+        <nav
+        class="nav fixed-top navbar bg-body-tertiary"
+        style="background-color: #F8F9FA; height: 53px; padding-left: 20%;"
+      >
+        <div class="container-fluid w-100">
+          <a class="navbar-brand" style="background: #FF5050;
+          background: radial-gradient(ellipse farthest-side at left center, #FF5050 48%, #A41316 0%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; font-weight: 1000; font-size: 30px; padding: 0;">Omad.uz</a>
+           
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+            
+          </form>
+          <a style="font-size: 22px; margin: 0;" class="nav-link text-danger" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>Kirish<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-octagon ms-2" viewBox="0 0 16 16">
+            <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
+          <a class="nav-link text-danger" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-plus me-2" viewBox="0 0 16 16">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+            <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+          </svg>Ro'yxatdan o'tish<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-question-octagon ms-2" viewBox="0 0 16 16">
+            <path d="M4.54.146A.5.5 0 0 1 4.893 0h6.214a.5.5 0 0 1 .353.146l4.394 4.394a.5.5 0 0 1 .146.353v6.214a.5.5 0 0 1-.146.353l-4.394 4.394a.5.5 0 0 1-.353.146H4.893a.5.5 0 0 1-.353-.146L.146 11.46A.5.5 0 0 1 0 11.107V4.893a.5.5 0 0 1 .146-.353L4.54.146zM5.1 1 1 5.1v5.8L5.1 15h5.8l4.1-4.1V5.1L10.9 1H5.1z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg></a>
+          <a class="nav-link text-danger" aria-current="page" href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class=" bi bi-eye" viewBox="0 0 16 16">
+            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+          </svg></span><span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="ms-2 bi bi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+          </svg></span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4 ms-2 mb-1" viewBox="0 0 16 16">
+            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+          </svg></a>
+        </div>
+         
+      </nav>
+      <nav
+        class="fixed-top nav nav-pills flex-column flex-sm-row"
+        style="
+          background-color: rgb(51, 51, 51);
+          height: 43px;
+          width: 100%;
+          top: 53px;
+        "
+      >
+      <ul class="nav nav-tabs">
+        <li class="flex-sm-fill text-sm-center nav-item">
+            <a class="nav-link text-light" aria-current="page" href="../index.html">HOME</a>
+          </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light active" aria-current="page" href="./mevalar.html">Oziq-ovqatlar</a>
+        </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light" href="./idishlar.html">Idishlar</a>
+        </li>
+        <li class="flex-sm-fill text-sm-center nav-item">
+          <a class="nav-link text-light" href="./bolla.html">O'yinchoqlar</a>
+        </li>
+      </ul>
+      </nav>
+        <div class="body row">
+            <div class="sitebar">
+                <div class="navigation col-2 zindex-fixed">
+                    <ul>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./mevalar.html">
+                                <span class="tittle animated bounceInDown">Mevalar</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./ichimliklar.html">
+                                <!-- <span class="icon"><i class="fat fa-bottle-water"></i></span> -->
+                                <span class="tittle">Ichimliklar</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./sabzavotlar.html">
+                                <span class="tittle">Sabzavotlar</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./don_maxsulotlari.html">
+                                <span class="tittle">Don mahsulotlari</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./qandolat.html">
+                                <!-- <span class="icon"><ion-icon name="briefcase-outline"></ion-icon></span> -->
+                                <span class="tittle">Qandolat mahsulotlari</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./go'sh_maxsulotlari.html">
+                                <span class="tittle">Go'st mahsulotlari</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./dudlangan_maxsulotlar.html">
+                              <span class="tittle">Dudlangan mahsulotlari</span>
+                            </a>
+                        </li>
+                        <li class="list active">
+                            <b></b>
+                            <b></b>
+                            <a href="./quruq_choylar.html">
+                              <span class="tittle">Choy mahsulotlari</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./shirinlik.html">
+                                <span class="tittle">Shirinliklar</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <b></b>
+                            <b></b>
+                            <a href="./sut_maxsulotlar.html">
+                                <span class="tittle">Sut mahsulotlari</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <article class="mevalar col-8">
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://nagor-shop.ru/wp-content/uploads/2020/04/chaj-ahmad-sedoj.jpg"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Ahmad tea</h5>
+                        <p class="card-text">1 p - <span class="narx">20990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://img2.freepng.ru/20180503/teq/kisspng-tea-production-in-sri-lanka-tea-leaf-grading-green-tea-garden-5aeb5602d007e3.0039662315253724188521.jpg" class="card-img-top sabzavot-img"
+                        alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Randy tea</h5>
+                        <p class="card-text">1 p - <span class="narx">18990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://dostavka-produktov64.ru/uploads/23095.jpg"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Richard</h5>
+                        <p class="card-text">1 p - <span class="narx">22990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://w7.pngwing.com/pngs/122/463/png-transparent-assam-tea-darjeeling-tea-tea-leaf-grading-white-tea-tea-tea-india-green-tea.png"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Greenfild</h5>
+                        <p class="card-text">1 p - <span class="narx">28990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/18/44/59/07/98/82/8/100023895188b3.png"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Tess trea</h5>
+                        <p class="card-text">1 p - <span class="narx">19990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://a.allegroimg.com/original/11d3c2/8806267e47a0896af690e1afd765/HERBATA-CZARNA-Ceylon-BOP1-wykwintna-1kg"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Qora choy</h5>
+                        <p class="card-text">1 kg - <span class="narx">40990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+                <div class="card card-shadow box">
+                    <div class="ribbon"><span>top</span></div>
+                    <img src="https://znaychay.ru/wp-content/uploads/2020/06/kimun5.jpg"
+                        class="card-img-top sabzavot-img" alt="sabzi">
+                    <div class="card-body align-center">
+                        <h5 class="card-title">Ko'k choy</h5>
+                        <p class="card-text">1 kg - <span class="narx">38990</span> so'm.</p>
+                        <a href="#" class="btn btn-outline-primary">+998(90) 896 43 26</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="../js/quruq_choy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
